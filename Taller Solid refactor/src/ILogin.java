@@ -1,4 +1,9 @@
-public class LogIn {
+public interface ILogin {
+    void log(User user);
+}
+
+
+public class LogIn implements ILogin{
     public void log (User user) {
         System.out.println("Has access to the website");
         insertUserInDatabase(user);
